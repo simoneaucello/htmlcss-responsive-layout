@@ -1,10 +1,138 @@
+:root{
+  --blue: #0084FD;
+  --light-blue: #85DDFF;
+  --violet: #9591dd;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.debug{
+  border: 1px solid black;
+}
+
+header .menu{
+  height: 55px;
+  background-color: var(--blue);
+  color: white;
+}
+
 body{
   font-family: 'PT Sans', sans-serif;
 
+}
+
+img{
+  max-width: 100%;
+}
+
+.flexed{
+  display: flex;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.around{
+  justify-content: space-around;
+}
+
+.center{
+  justify-content: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+
+
+/* UTILITIES  */
+
+.container{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.row{
+  /* margin-top: 30px; */
+}
+
+
+/* header  */
+
+header .menu{
+    
+}
+
+header .menu .container{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.logo{
+  /* align-items: center; */
+}
+
+.menu-desk{
+  display: none;
+}
+
+
+
+
+
+
+/* MAIN  */
+
+
+.col{
+  margin-top: 40px;
+  margin: 20px;
+}
+
+.card-demo{
+  width: 310px;
+  height: 600px;
+  background-color: var(--light-blue);
+}
+
+.card-code{
+  width: 310px;
+  height: 350px;
+  background-color: var(--light-blue);
+}
+
+
+/* STRATEGIC  */
+
+.strategic{
+  background-color: var(--violet);
+  color: white;
+}
+
+.plan{
+  /* width: 310px;
+  height: 500px;
+  background-color: var(--light-blue); */
+}
+
+/* STRATEGIC  */
+
+/* TESTIMONIAL  */
+
+.testimonials{
+  background-color: white;
+}
+
+.testimonials .text-partner{
+  text-align: center;
 }
