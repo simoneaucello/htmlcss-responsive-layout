@@ -51,6 +51,17 @@ img{
   flex-wrap: wrap;
 }
 
+.margin-bottom{
+  margin-bottom: 50px;
+}
+
+.radius{
+  border-radius: 20px;
+}
+
+.align-ct{
+  text-align: center;
+}
 
 
 /* UTILITIES  */
@@ -95,7 +106,7 @@ header .menu .container{
 
 
 .col{
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin: 20px;
 }
 
@@ -134,5 +145,27 @@ header .menu .container{
 }
 
 .testimonials .text-partner{
-  text-align: center;
+  margin-top: 20px;
+}
+
+.card-lg{
+  background-color: var(--violet);
+  margin-top: 30px;
+  color: white;
+  width: 100%;
+}
+
+/* BENEFITS  */
+
+.benefits{
+  background-color: var(--violet);
+  color: white;
+}
+
+.card-white{
+  width: 320px;
+  background-color: white;
+  height: 420px;
+  color: var(--violet);
+  padding: 35px;
 }
