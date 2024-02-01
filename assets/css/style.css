@@ -2,6 +2,7 @@
   --blue: #0084FD;
   --light-blue: #85DDFF;
   --violet: #9591dd;
+  --black: #363636;
 }
 
 
@@ -169,3 +170,60 @@ header .menu .container{
   color: var(--violet);
   padding: 35px;
 }
+
+
+/* ABOUT US  */
+.about-us{
+  background-color: white;
+  color: var(--violet);
+}
+
+.text-about{
+
+  padding: 20px;
+}
+
+/* FREE  */
+
+.pricing{
+  background-color: var(--violet);
+}
+
+.text-about p{
+  color: black;
+  padding-top: 50px;
+  line-height: 30px;
+}
+
+.card-about{
+
+}
+
+.free{
+  height:650px;
+}
+
+/* FOOTER  */
+
+.bot-foot{
+  background-color: var(--black);
+  color: white;
+}
+
+/* RESPONSIVE  */
+
+/* @media screen and (min-width: 768px){
+  .container{
+    max-width: 90%;
+
+  }
+
+  .demo .row .col-sx{
+    width: 70%;
+  }
+
+  .demo .row .col-dx{
+    width: 30%;
+  }
+
+} */
