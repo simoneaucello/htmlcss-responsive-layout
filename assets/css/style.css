@@ -1,6 +1,6 @@
 :root{
   --blue: #0084FD;
-  --light-blue: #85DDFF;
+  --light-blue: #bbdbfc;
   --violet: #9591dd;
   --black: #363636;
 }
@@ -13,217 +13,427 @@
   box-sizing: border-box;
 }
 
-.debug{
-  border: 1px solid black;
-}
-
-header .menu{
-  height: 55px;
-  background-color: var(--blue);
-  color: white;
-}
-
 body{
-  font-family: 'PT Sans', sans-serif;
-
+  font-family: 'PT Sans', sans-serif;  
 }
+
+.debug{
+  background-color: rgb(212, 91, 91, .2);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
 
 img{
   max-width: 100%;
+
 }
+/* debug  */
+
+/* header,
+.container,
+.row,
+.col{
+  border: 1px solid black;
+
+} */
 
 .flexed{
   display: flex;
 }
 
-.between{
-  justify-content: space-between;
+.d-none{
+  display: none;
 }
 
-.around{
-  justify-content: space-around;
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  width: 100%;
+  padding: 10px;
 }
 
 .center{
   justify-content: center;
 }
 
-.wrap{
-  flex-wrap: wrap;
+.between{
+  justify-content: space-between;
 }
 
-.margin-bottom{
-  margin-bottom: 50px;
+.nowrap{
+  flex-wrap: nowrap;
+}
+
+.card{
+  background-color: var(--light-blue);
+  border-radius: 20px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.al-center{
+  align-items: center;
+}
+
+.mb{
+  margin-bottom: 30px;
+}
+
+.mt{
+  margin-top: 30px;
 }
 
 .radius{
   border-radius: 20px;
 }
 
-.align-ct{
-  text-align: center;
+p{
+  line-height: 30px;
 }
-
-
 /* UTILITIES  */
 
-.container{
-  margin: 0 auto;
-  max-width: 1140px;
-}
 
-.row{
-  /* margin-top: 30px; */
-}
+/* HEADER  */
 
-
-/* header  */
 
 header .menu{
-    
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* height: 55px; */
+  background-color: var(--blue);
+  color: white;
 }
 
 header .menu .container{
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-
 }
 
-.logo{
-  /* align-items: center; */
+header .logo{
+  font-size: 2.5rem;
 }
 
-.menu-desk{
+header .list-nav{
+  font-size: 1.8rem;
+}
+
+.list-nav .menu-desk{
   display: none;
 }
 
+nav ul{
+  list-style: none;
+}
 
+nav ul li{
+  font-size: .8rem;;
+  list-style: none;
+  margin: 0 30px;
+}
+
+nav ul li a{
+  text-decoration: none;  
+}
+
+.button{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+
+.list-nav{
+
+}
 
 
 
 
 /* MAIN  */
 
+/* DEMO  */
 
-.col{
-  /* margin-top: 40px; */
-  margin: 20px;
+#demo{
+  margin-top: 100px;
+  color: #3c81f4;
 }
 
-.card-demo{
-  width: 310px;
-  height: 600px;
-  background-color: var(--light-blue);
+#demo .card{
+  padding: 15px 10px;
 }
 
-.card-code{
-  width: 310px;
-  height: 350px;
-  background-color: var(--light-blue);
+#demo img{
+  max-width: 300px
 }
 
+#demo p{
+  color: black;
+
+}
+
+.fawe{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size:4rem;
+}
 
 /* STRATEGIC  */
 
-.strategic{
+#strategic{
   background-color: var(--violet);
-  color: white;
 }
 
-.plan{
-  /* width: 310px;
-  height: 500px;
-  background-color: var(--light-blue); */
+#strategic img{
+  width: 300px;
 }
 
-/* STRATEGIC  */
 
-/* TESTIMONIAL  */
+/* testimonials  */
 
-.testimonials{
+#testimonials{
   background-color: white;
 }
 
-.testimonials .text-partner{
-  margin-top: 20px;
+#testimonials .card{
+  background-color: var(--violet);
+  margin-bottom: 30px;
+  padding: 20px;
+  color: white;
 }
 
-.card-lg{
+#testimonials h2{
+  color: var(--violet);
+}
+
+#testimonials img{
+  object-fit:cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+ 
+}
+
+#testimonials .col{
+  text-align: center;
+}
+
+/* .card-lg{
   background-color: var(--violet);
   margin-top: 30px;
   color: white;
   width: 100%;
-}
+} */
+
 
 /* BENEFITS  */
 
-.benefits{
+#benefits{
   background-color: var(--violet);
   color: white;
 }
 
-.card-white{
-  width: 320px;
+#benefits .card{
   background-color: white;
-  height: 420px;
   color: var(--violet);
-  padding: 35px;
+  padding: 25px;
 }
+
+#benefits h1{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#benefits h4{
+  margin-bottom: 10px;
+}
+
+#benefits p{
+  color: black;
+  margin-bottom: 20px;
+}
+
+#benefits a{
+  margin-top: 30px;
+  background-color: var(--violet);
+  padding: 5px 35px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
 
 
 /* ABOUT US  */
-.about-us{
+
+#aboutus{
   background-color: white;
   color: var(--violet);
+  padding: 50px;
+}
+
+#aboutus h1{
+  font-size: 3rem;
+
 }
 
 .text-about{
-
-  padding: 20px;
-}
-
-/* FREE  */
-
-.pricing{
-  background-color: var(--violet);
+  padding: 30px;
 }
 
 .text-about p{
   color: black;
   padding-top: 50px;
-  line-height: 30px;
+  line-height: 40px;
 }
+
+#aboutus img{
+  object-fit:cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
 
 .card-about{
-
+  margin: 50px;
+ 
+  
 }
 
-.free{
-  height:650px;
+#aboutus h3{
+  margin: 30px 0;
+  font-size: 1.5rem;
 }
 
-/* FOOTER  */
-
-.bot-foot{
-  background-color: var(--black);
+#aboutus a{
+  margin-top: 30px;
+  background-color: var(--violet);
+  padding: 5px 20px;
+  border-radius: 20px;
   color: white;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-left: 0px;
 }
+
+
+
+
+
+/* FREE  */
+
+#pricing{
+  background-color: var(--violet);
+}
+
+
 
 /* RESPONSIVE  */
 
-/* @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
   .container{
-    max-width: 90%;
-
+    width: 720px;
   }
 
-  .demo .row .col-sx{
+  #demo .col{
+    width: calc(100% /3);
+  }
+
+  #demo .col:first-child{
+    width: calc(100% / 1.5);
+  }
+  
+  #testimonials .card .row{
+    flex-wrap: nowrap;
+  }
+
+  #testimonials .card .col:first-child{
+    width: 20%;
+  }
+
+  #testimonials .card .col:last-child{
+    width: 80%;
+  }
+
+  #benefits .col{
+    width: 50%;
+  }
+
+  #aboutus .col:first-child{
+    width: 60%;
+  }
+
+  #aboutus .col:last-child{
+    width: 40%;
+  }
+
+
+
+
+}
+
+@media screen and (min-width: 1200px){
+  /* .d-xl-none{
+    display: none;
+  }
+  
+  .d-xl-block{
+    display: block;
+  } */
+
+
+  .menu .row .list-nav .menu-desk{
+    display: block;
+  }
+  .menu .row .list-nav .burger{
+    display: none;
+  }
+
+
+  
+  .container{
+    width: 1140px;
+  }
+
+  #strategic .col{
+    width: 50%;
+  }
+
+  #benefits .col{
+    width: calc(100% / 3);
+  }
+
+  
+  #aboutus .col:first-child{
     width: 70%;
   }
 
-  .demo .row .col-dx{
+  #aboutus .col:last-child{
     width: 30%;
   }
+  
 
-} */
+}
