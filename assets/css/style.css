@@ -198,6 +198,7 @@ nav ul li a{
   max-width: 100%
 }
 #demo .card{
+  align-items: flex-end;
   padding: 0px 20px;
   padding-top: 20px
 }
@@ -221,12 +222,15 @@ nav ul li a{
 }
 
 #demo a{
+  display: inline-block;
   text-decoration: none;
   padding: 10px 40px;
   color: white;
   background-color: var(--blue);
-  margin-top: 50px;
+  margin-bottom: 20px
 }
+
+
 
 /* STRATEGIC  */
 
