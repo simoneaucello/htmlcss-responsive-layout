@@ -67,6 +67,10 @@ img{
   flex-wrap: nowrap;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .card{
   background-color: var(--light-blue);
   border-radius: 20px;
@@ -195,6 +199,7 @@ nav ul li a{
 }
 #demo .card{
   padding: 0px 20px;
+  padding-top: 20px
 }
 
 #demo img{
@@ -500,9 +505,10 @@ footer span{
     width: calc(100% / 1.5);
   }
 
-  /* #demo .col .card{
-    display:flex;
-  } */
+  #demo .text-demo, .demo-img{
+    max-width: 50%;
+  }
+ 
   
   #testimonials .card .row{
     flex-wrap: nowrap;
