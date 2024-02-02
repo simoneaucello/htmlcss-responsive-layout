@@ -27,6 +27,7 @@ body{
 
 img{
   max-width: 100%;
+  display: block;
 
 }
 
@@ -186,21 +187,21 @@ nav ul li a{
 }
 
 .text-demo{
-  width: 50%
+  max-width: 100%;
 }
 
+.demo-img{
+  max-width: 100%
+}
 #demo .card{
-  padding: 20px 20px;
+  padding: 0px 20px;
 }
 
 #demo img{
   max-width: 250px;
-  margin-bottom: -50px
+
 }
 
-.demo-img{
-  /* margin-top: -100px */
-}
 
 #demo p{
   color: black;
